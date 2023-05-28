@@ -30,15 +30,22 @@ git clone https://github.com/gabrielssi/lab-shopping-list.git
 
 2. Navegue até o diretório do projeto:
 
+```bash
 cd lab-shopping-list
+
+```
 
 3. Navegue até o diretório do projeto:
 
+```bash
 npm install
+```
 
 4. Execute o projeto:
 
+```bash
 npm start
+```
 
 Acesse a aplicação em seu navegador no endereço http://localhost:3000.
 
