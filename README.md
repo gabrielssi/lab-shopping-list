@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# LabShoppingList
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+O LabShoppingList é um sistema de lista de compras desenvolvido em React. Ele permite que você adicione produtos à lista, marque-os como comprados, insira o valor da compra e acompanhe o valor total gasto.
 
-## Available Scripts
+## Requisitos da Aplicação
 
-In the project directory, you can run:
+- Um título na aba do navegador para facilitar a identificação.
+- Um cabeçalho que exibe o nome da aplicação.
+- Um campo de texto com validação para digitar o nome do produto a ser adicionado.
+  - O campo é obrigatório.
+  - O campo deve ter no mínimo 8 e no máximo 64 caracteres.
+- Um botão para adicionar um novo produto na lista.
+- Uma lista que exibe os produtos já adicionados.
+  - Cada produto da lista possui:
+    - Um checkbox para marcar o produto como comprado.
+    - O texto que foi digitado ao cadastrar o produto.
+    - Um botão para excluir o produto da lista.
+  - Ao marcar um produto como comprado, um popup é exibido para inserir o valor da compra.
+    - O valor inserido é somado ao valor total das compras.
+- A lista é salva no localStorage do navegador e carregada ao reabrir a página.
 
-### `npm start`
+## Como Utilizar
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone este repositório em sua máquina local:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+git clone https://github.com/gabrielssi/lab-shopping-list.git
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+2. Navegue até o diretório do projeto:
 
-### `npm run build`
+cd lab-shopping-list
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Navegue até o diretório do projeto:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+npm install
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Execute o projeto:
 
-### `npm run eject`
+npm start
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Acesse a aplicação em seu navegador no endereço http://localhost:3000.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- No campo de texto, digite o nome do produto que deseja adicionar à lista (entre 8 e 64 caracteres).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Clique no botão "Adicionar" para adicionar o produto à lista.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Na lista de produtos, marque um produto como comprado ao clicar no checkbox correspondente.
 
-## Learn More
+- Ao marcar um produto como comprado, será exibido um popup para inserir o valor da compra.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Insira o valor da compra no formato "R$0,00" e pressione "OK".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- O valor da compra será somado ao valor total exibido abaixo da lista de produtos.
 
-### Code Splitting
+- Para excluir um produto da lista, clique no botão "Excluir" correspondente ao produto.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- O estado da lista e o valor total das compras são salvos automaticamente no localStorage e serão restaurados quando você abrir a aplicação novamente.
 
-### Analyzing the Bundle Size
+- Para limpar o valor total das compras, clique no botão "Limpar" localizado abaixo do valor total.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Considerações Finais
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+O LabShoppingList é um projeto simples, mas funcional, que permite gerenciar uma lista de compras de forma prática. Ele foi desenvolvido utilizando React e localStorage para armazenar os dados. Sinta-se à vontade para explorar o código, fazer melhorias e personalizar o projeto de acordo com suas necessidades.
